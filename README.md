@@ -38,3 +38,13 @@ To see the source code you can visit the [repo](https://github.com/minimilkfish/
 - ### `scope`（可选）：用于说明`commit` 影响的范围，如数据层、控制层、视图层等
 
 - ### `subject`：用于本次提交的主题简短说明，可含主要模块的相关说明
+
+---
+
+## Env
+
+- `Python` ^3.7.8
+- `Ruby` ruby 2.6.6p146 (2020-03-31 revision 67876) [x64-mingw32]
+- `RubyGems` ^3.1.4
+- `NodeJS` ^16.13.0
+- `Jekyll` ^4.1.1
