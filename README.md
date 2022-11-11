@@ -43,6 +43,7 @@ To see the source code you can visit the [repo](https://github.com/minimilkfish/
 
 ## Env
 
+- `OS`：Windows 11 22000.1098
 - `Python` ^3.7.8
 - `Ruby` ruby 2.6.6p146 (2020-03-31 revision 67876) [x64-mingw32]
 - `RubyGems` ^3.1.4
