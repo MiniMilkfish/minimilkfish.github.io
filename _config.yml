@@ -55,3 +55,10 @@ plugins:
 #   - vendor/ruby/
 
 Encoding: utf-8
+
+defaults:
+ - 
+    scope:
+      path: ""
+    values:
+      author: "MiniMilkfish"

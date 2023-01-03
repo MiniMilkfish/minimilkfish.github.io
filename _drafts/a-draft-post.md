@@ -1,11 +1,14 @@
 ---
 layout: post
 title:  "A Draft Post"
-date:   2022-11-09 16:32:33 +0800
-categories: jekyll update
+date:   2022-11-11 16:32:33 +0800
+categories: a b c d
+# permalink: /1/2/3/4/123.html
+# published: false
+tags: 1 2 3 4 5,6
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. 
 Jekyll requires blog post files to be named according to the following format:
 
 `YEAR-MONTH-DAY-title.MARKUP`
@@ -14,13 +17,46 @@ Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit number
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
+{% highlight ruby%}
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
+
+def show
+  @widgt = Widgt(param[:id])
+  respond_to do |format|
+    format.html #show.html.erb
+    format.json { render json: @widgt}
+  end
+end
 {% endhighlight %}
+
+自定义变量使用 title: {{page.title}}
+
+`site.url`: {{site.url}}
+
+![核心硬件评测.png]({{site.url}}/assects/核心硬件评测.png)
+![核心硬件评测.png](/assects/核心硬件评测.png)
+
+```ruby
+# ...ruby code 
+# 自定义变量使用 title: {{page.title}}
+def print_hi(name)
+  puts "Hi, #{name}"
+```
+
+
+`文件列表`
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{post.url}}">{{post.title}}</a>
+      <p>{{ post.excerpt | remove:'<p>' | remove:'</p>'}}</p>
+    </li>
+  {% endfor %}
+</ul>
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
