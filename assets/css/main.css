@@ -1,0 +1,288 @@
+:root {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #2563eb;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --border: #cbd5e1;
+  --input-bg: #ffffff;
+  --player-bg: #eef2ff;
+  --player-border: #94a3b8;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111827;
+  --panel: #1f2937;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --primary: #60a5fa;
+  --border: #374151;
+  --input-bg: #111827;
+  --player-bg: #0f172a;
+  --player-border: #334155;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.site-header,
+.site-footer {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  margin-top: 40px;
+  color: var(--muted);
+}
+
+.site-nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.theme-toggle {
+  margin-left: auto;
+}
+
+.nav-link.active {
+  background: var(--primary);
+  color: #0b1220;
+}
+
+.page-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-panel,
+.links-panel,
+.blog-page,
+.post-detail {
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.engine-switch,
+.player-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.engine-btn.active {
+  background: var(--primary);
+  color: #0b1220;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+input,
+button {
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.category-btn.active {
+  background: var(--primary);
+  color: #0b1220;
+}
+
+.link-list,
+.blog-list,
+.song-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-item,
+.blog-item,
+.song-item {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.link-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.link-last-checked {
+  color: var(--muted);
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-up {
+  background: var(--success);
+}
+
+.status-down {
+  background: var(--danger);
+}
+
+.player {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  width: 320px;
+  background: var(--player-bg);
+  border: 1px solid var(--player-border);
+  border-radius: 12px;
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--player-border);
+}
+
+.player-body {
+  padding: 12px;
+}
+
+.player-cover-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.player-cover {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #334155;
+  animation: spinCover 10s linear infinite;
+  animation-play-state: paused;
+}
+
+.player.playing .player-cover {
+  animation-play-state: running;
+}
+
+.player-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.player-minimized .player-body {
+  display: none;
+}
+
+.lyrics-panel {
+  max-height: 120px;
+  overflow-y: auto;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.lyrics-line {
+  margin: 4px 0;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.lyrics-line.active {
+  color: var(--primary);
+}
+
+.song-item.active {
+  border-color: var(--primary);
+}
+
+.blog-meta,
+.post-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.info-card {
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 18px;
+}
+
+.error-page {
+  text-align: center;
+}
+
+.error-page h1 {
+  margin-bottom: 4px;
+  font-size: 2.5rem;
+}
+
+@keyframes spinCover {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

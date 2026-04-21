@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="post-detail">
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% if page.categories %}
+      · 分类：{{ page.categories | join: ", " }}
+      {% endif %}
+      {% if page.tags %}
+      · 标签：{{ page.tags | join: ", " }}
+      {% endif %}
+    </p>
+  </header>
+  <div class="post-content">{{ content }}</div>
+</article>

@@ -1,8 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title: "Welcome to Jekyll!"
 date:   2022-11-09 16:32:33 +0800
-categories: jekyll update
+categories: [jekyll, update]
+tags: [jekyll, demo]
+summary: 一篇用于演示的默认文章，可用于测试博客列表与详情页展示。
+description: Jekyll 默认欢迎文章
+last_modified_at: 2022-11-09
+toc: false
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the silte to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -27,7 +32,3 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
-3
-
-
-

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+    <meta property="og:description" content="{{ page.description | default: site.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}" class="nav-link">首页</a>
+        <a href="{{ '/blog/' | relative_url }}" class="nav-link">博客</a>
+        <a href="{{ '/about/' | relative_url }}" class="nav-link">关于</a>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切换明暗主题">暗色</button>
+      </nav>
+    </header>
+
+    <main id="main-content" class="page-main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <small>
+        © {{ "now" | date: "%Y" }} {{ site.author }} · Built with Jekyll
+      </small>
+    </footer>
+
+    <section id="music-player" class="player player-maximized" aria-label="音乐播放器">
+      <div class="player-header">
+        <strong>播放器</strong>
+        <button type="button" id="toggle-player" aria-label="最小化或最大化播放器">－</button>
+      </div>
+      <div class="player-body">
+        <div class="player-cover-wrap">
+          <img id="song-cover" class="player-cover" src="" alt="歌曲封面" />
+        </div>
+        <div class="player-now">
+          <span id="song-name">暂无歌曲</span>
+          <span id="song-artist">-</span>
+        </div>
+        <audio id="audio-el" preload="none"></audio>
+        <div class="player-progress">
+          <input id="progress-input" type="range" min="0" max="100" value="0" aria-label="播放进度" />
+          <div class="player-time">
+            <span id="current-time">00:00</span>
+            <span id="total-time">00:00</span>
+          </div>
+        </div>
+        <div class="player-controls">
+          <button type="button" id="prev-song" aria-label="上一首">⏮</button>
+          <button type="button" id="play-toggle" aria-label="播放或暂停">▶</button>
+          <button type="button" id="next-song" aria-label="下一首">⏭</button>
+          <button type="button" id="play-mode-toggle" aria-label="切换播放模式">🔁</button>
+          <button type="button" id="mute-toggle" aria-label="静音或取消静音">🔇</button>
+        </div>
+        <div class="player-volume">
+          <input id="volume-input" type="range" min="0" max="1" step="0.01" value="0.7" aria-label="音量" />
+        </div>
+        <div id="lyrics-panel" class="lyrics-panel" aria-label="歌词显示区域">
+          <p class="lyrics-line active">暂无歌词</p>
+        </div>
+        <ul id="song-list" class="song-list"></ul>
+      </div>
+    </section>
+
+    <script>
+      window.linksData = {{ site.data.links | jsonify }};
+      window.musicData = {{ site.data.music | jsonify }};
+    </script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+---
+layout: default
+title: 博客
+permalink: /blog/
+description: ToolWall 博客列表
+---
+
+<section class="blog-page">
+  <h1>博客文章</h1>
+  <input id="blog-filter-input" type="text" placeholder="按标题或标签过滤" aria-label="按标题或标签过滤博客" />
+  <ul id="blog-list" class="blog-list">
+    {% for post in site.posts %}
+      <li class="blog-item" data-title="{{ post.title | downcase }}" data-tags="{{ post.tags | join: ' ' | downcase }}">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <div class="blog-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+          {% if post.categories %}
+            <span>分类：{{ post.categories | join: ", " }}</span>
+          {% endif %}
+        </div>
+        {% if post.summary %}
+          <p>{{ post.summary }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>

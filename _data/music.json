@@ -1,0 +1,17 @@
+{
+  "songs": [
+    {
+      "name": "夜曲",
+      "artist": "周杰伦",
+      "url": "/assets/music/01.夜曲.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/01.夜曲.lrc"
+    },
+    {
+      "name": "一路向北",
+      "artist": "周杰伦",
+      "url": "/assets/music/02.一路向北.flac",
+      "cover": "/assets/music/covers/Cover.jpg"
+    }
+  ]
+}

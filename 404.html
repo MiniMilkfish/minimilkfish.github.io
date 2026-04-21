@@ -1,25 +1,13 @@
 ---
 permalink: /404.html
 layout: default
+title: 页面未找到
+description: 请求的页面不存在
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
+<section class="info-card error-page">
   <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+  <p><strong>页面未找到</strong></p>
+  <p>你访问的地址不存在，可能已被移动或删除。</p>
+  <p><a href="{{ '/' | relative_url }}">返回首页</a></p>
+</section>

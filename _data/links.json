@@ -1,0 +1,33 @@
+{
+  "categories": ["开发工具", "AI工具", "学习资源"],
+  "links": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com",
+      "category": "开发工具",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Stack Overflow",
+      "url": "https://stackoverflow.com",
+      "category": "开发工具",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chat.openai.com",
+      "category": "AI工具",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "MDN Web Docs",
+      "url": "https://developer.mozilla.org",
+      "category": "学习资源",
+      "status": "down",
+      "lastChecked": ""
+    }
+  ]
+}
