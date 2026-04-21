@@ -73,6 +73,6 @@
       window.linksData = {{ site.data.links | jsonify }};
       window.musicData = {{ site.data.music | jsonify }};
     </script>
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script type="module" src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>

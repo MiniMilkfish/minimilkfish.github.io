@@ -1,17 +1,67 @@
 {
   "songs": [
     {
-      "name": "夜曲",
+      "name": "周杰伦 - 一路向北",
       "artist": "周杰伦",
-      "url": "/assets/music/01.夜曲.flac",
+      "url": "/assets/music/周杰伦 - 一路向北.flac",
       "cover": "/assets/music/covers/Cover.jpg",
-      "lyrics": "/assets/music/lyrics/01.夜曲.lrc"
+      "lyrics": "/assets/music/lyrics/周杰伦 - 一路向北.lrc"
     },
     {
-      "name": "一路向北",
+      "name": "周杰伦 - 夜曲",
       "artist": "周杰伦",
-      "url": "/assets/music/02.一路向北.flac",
-      "cover": "/assets/music/covers/Cover.jpg"
+      "url": "/assets/music/周杰伦 - 夜曲.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/周杰伦 - 夜曲.lrc"
+    },
+    {
+      "name": "周杰伦 - 夜的第七章",
+      "artist": "周杰伦",
+      "url": "/assets/music/周杰伦 - 夜的第七章.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/周杰伦 - 夜的第七章.lrc"
+    },
+    {
+      "name": "周杰伦 - 将军",
+      "artist": "周杰伦",
+      "url": "/assets/music/周杰伦 - 将军.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/周杰伦 - 将军.lrc"
+    },
+    {
+      "name": "周杰伦 - 最长的电影",
+      "artist": "周杰伦",
+      "url": "/assets/music/周杰伦 - 最长的电影.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/周杰伦 - 最长的电影.lrc"
+    },
+    {
+      "name": "周杰伦 - 米兰的小铁匠",
+      "artist": "周杰伦",
+      "url": "/assets/music/周杰伦 - 米兰的小铁匠.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/周杰伦 - 米兰的小铁匠.lrc"
+    },
+    {
+      "name": "周杰伦 - 阳光宅男",
+      "artist": "周杰伦",
+      "url": "/assets/music/周杰伦 - 阳光宅男.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/周杰伦 - 阳光宅男.lrc"
+    },
+    {
+      "name": "周杰伦 - 飘移",
+      "artist": "周杰伦",
+      "url": "/assets/music/周杰伦 - 飘移.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/周杰伦 - 飘移.lrc"
+    },
+    {
+      "name": "周杰伦 - 龙卷风",
+      "artist": "周杰伦",
+      "url": "/assets/music/周杰伦 - 龙卷风.flac",
+      "cover": "/assets/music/covers/Cover.jpg",
+      "lyrics": "/assets/music/lyrics/周杰伦 - 龙卷风.lrc"
     }
   ]
 }
