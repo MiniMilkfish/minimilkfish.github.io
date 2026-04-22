@@ -12,135 +12,135 @@
       "url": "https://www.figma.com",
       "category": "设计资源",
       "description": "协作式设计工具",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=www.figma.com&sz=64",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Dribbble",
       "url": "https://dribbble.com",
       "category": "设计资源",
       "description": "设计师作品社区",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=dribbble.com&sz=64",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Behance",
       "url": "https://www.behance.net",
       "category": "设计资源",
       "description": "创意作品展示平台",
-      "icon": "",
-      "status": "up",
-      "lastChecked": ""
+      "icon": "https://www.google.com/s2/favicons?domain=www.behance.net&sz=64",
+      "status": "down",
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "GitHub",
       "url": "https://github.com",
       "category": "开发工具",
       "description": "代码托管与协作",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
       "status": "up",
-      "lastChecked": "2026-04-21T13:06:42.102088+00:00"
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Stack Overflow",
       "url": "https://stackoverflow.com",
       "category": "开发工具",
       "description": "开发者问答社区",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=stackoverflow.com&sz=64",
       "status": "up",
-      "lastChecked": "2026-04-21T13:06:42.102088+00:00"
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "VS Code",
       "url": "https://code.visualstudio.com",
       "category": "开发工具",
       "description": "轻量级代码编辑器",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=64",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "MDN Web Docs",
       "url": "https://developer.mozilla.org",
       "category": "开发工具",
       "description": "Web 技术权威文档",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=developer.mozilla.org&sz=64",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Midjourney",
       "url": "https://www.midjourney.com",
       "category": "人工智能",
       "description": "AI 图像生成神器",
-      "icon": "",
-      "status": "up",
-      "lastChecked": ""
+      "icon": "https://www.google.com/s2/favicons?domain=www.midjourney.com&sz=64",
+      "status": "down",
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "ChatGPT",
       "url": "https://chat.openai.com",
       "category": "人工智能",
       "description": "OpenAI 对话式 AI",
-      "icon": "",
-      "status": "up",
-      "lastChecked": ""
+      "icon": "https://www.google.com/s2/favicons?domain=chat.openai.com&sz=64",
+      "status": "down",
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Claude",
       "url": "https://claude.ai",
       "category": "人工智能",
       "description": "Anthropic AI 助手",
-      "icon": "",
-      "status": "up",
-      "lastChecked": ""
+      "icon": "https://www.google.com/s2/favicons?domain=claude.ai&sz=64",
+      "status": "down",
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Notion",
       "url": "https://www.notion.so",
       "category": "效率办公",
       "description": "全能知识库与笔记",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=www.notion.so&sz=64",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Trello",
       "url": "https://trello.com",
       "category": "效率办公",
       "description": "看板式项目管理",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=trello.com&sz=64",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "YouTube",
       "url": "https://www.youtube.com",
       "category": "多媒体",
       "description": "全球视频分享平台",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=64",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Spotify",
       "url": "https://www.spotify.com",
       "category": "多媒体",
       "description": "在线音乐流媒体",
-      "icon": "",
+      "icon": "https://www.google.com/s2/favicons?domain=www.spotify.com&sz=64",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     },
     {
       "name": "Unsplash",
       "url": "https://unsplash.com",
       "category": "多媒体",
       "description": "免费高清图片库",
-      "icon": "",
-      "status": "up",
-      "lastChecked": ""
+      "icon": "https://www.google.com/s2/favicons?domain=unsplash.com&sz=64",
+      "status": "down",
+      "lastChecked": "2026-04-22T13:08:52.900925+00:00"
     }
   ]
 }
