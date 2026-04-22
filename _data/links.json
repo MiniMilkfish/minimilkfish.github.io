@@ -1,5 +1,11 @@
 {
-  "categories": ["设计资源", "开发工具", "多媒体", "人工智能", "效率办公"],
+  "categories": [
+    "设计资源",
+    "开发工具",
+    "多媒体",
+    "人工智能",
+    "效率办公"
+  ],
   "links": [
     {
       "name": "Figma",
@@ -35,7 +41,7 @@
       "description": "代码托管与协作",
       "icon": "",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-21T13:06:42.102088+00:00"
     },
     {
       "name": "Stack Overflow",
@@ -44,7 +50,7 @@
       "description": "开发者问答社区",
       "icon": "",
       "status": "up",
-      "lastChecked": ""
+      "lastChecked": "2026-04-21T13:06:42.102088+00:00"
     },
     {
       "name": "VS Code",
