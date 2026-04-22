@@ -2,17 +2,32 @@
 layout: default
 ---
 <article class="post-detail">
-  <header>
-    <h1>{{ page.title }}</h1>
-    <p class="post-meta">
+  <header class="post-header">
+    <div class="post-header-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-      {% if page.categories %}
-      · 分类：{{ page.categories | join: ", " }}
+      {% if page.categories.size > 0 %}
+      <span class="post-category-badge">{{ page.categories | first }}</span>
       {% endif %}
-      {% if page.tags %}
-      · 标签：{{ page.tags | join: ", " }}
-      {% endif %}
-    </p>
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.tags.size > 0 %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+      <span class="post-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
   </header>
   <div class="post-content">{{ content }}</div>
+  <footer class="post-footer">
+    <a href="{{ '/blog/' | relative_url }}" class="post-back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15,18 9,12 15,6"/>
+      </svg>
+      返回博客列表
+    </a>
+    {% if page.last_modified_at %}
+    <span class="post-updated">最后更新：{{ page.last_modified_at | date: "%Y-%m-%d" }}</span>
+    {% endif %}
+  </footer>
 </article>

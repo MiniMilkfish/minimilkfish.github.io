@@ -2,26 +2,69 @@
 layout: default
 title: 博客
 permalink: /blog/
-description: ToolWall 博客列表
+description: ToolWall 博客列表 — 阅读最新文章
 ---
 
 <section class="blog-page">
-  <h1>博客文章</h1>
-  <input id="blog-filter-input" type="text" placeholder="按标题或标签过滤" aria-label="按标题或标签过滤博客" />
-  <ul id="blog-list" class="blog-list">
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1 class="page-title">博客文章</h1>
+    <p class="page-subtitle">记录技术思考与日常灵感</p>
+  </div>
+
+  <!-- Search & Filter -->
+  <div class="blog-toolbar">
+    <div class="blog-search-wrap">
+      <span class="blog-search-icon" aria-hidden="true">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </span>
+      <input id="blog-filter-input" type="text" placeholder="搜索文章标题或标签…" aria-label="按标题或标签过滤博客" />
+    </div>
+    <div class="blog-stats">
+      <span class="blog-count">共 {{ site.posts.size }} 篇文章</span>
+    </div>
+  </div>
+
+  <!-- Post List -->
+  <div id="blog-list" class="blog-list">
     {% for post in site.posts %}
-      <li class="blog-item" data-title="{{ post.title | downcase }}" data-tags="{{ post.tags | join: ' ' | downcase }}">
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <div class="blog-meta">
+    <a href="{{ post.url | relative_url }}" class="blog-card" data-title="{{ post.title | downcase }}" data-tags="{{ post.tags | join: ' ' | downcase }}">
+      <div class="blog-card-content">
+        <div class="blog-card-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-          {% if post.categories %}
-            <span>分类：{{ post.categories | join: ", " }}</span>
+          {% if post.categories.size > 0 %}
+          <span class="blog-card-category">{{ post.categories | first }}</span>
           {% endif %}
         </div>
+        <h2 class="blog-card-title">{{ post.title }}</h2>
         {% if post.summary %}
-          <p>{{ post.summary }}</p>
+        <p class="blog-card-summary">{{ post.summary }}</p>
+        {% elsif post.excerpt %}
+        <p class="blog-card-summary">{{ post.excerpt | strip_html | truncate: 120 }}</p>
         {% endif %}
-      </li>
+        {% if post.tags.size > 0 %}
+        <div class="blog-card-tags">
+          {% for tag in post.tags %}
+          <span class="blog-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="blog-card-arrow">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9,18 15,12 9,6"/>
+        </svg>
+      </div>
+    </a>
     {% endfor %}
-  </ul>
+  </div>
+
+  <!-- Empty state -->
+  {% if site.posts.size == 0 %}
+  <div class="blog-empty">
+    <p>暂无文章，敬请期待 ✍️</p>
+  </div>
+  {% endif %}
 </section>

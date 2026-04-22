@@ -1,208 +1,220 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
-    <meta property="og:description" content="{{ page.description | default: site.description }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="site-nav">
-        <!-- Brand -->
-        <a href="{{ '/' | relative_url }}" class="nav-brand">
-          <span class="brand-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-              <path d="M2 17l10 5 10-5"/>
-              <path d="M2 12l10 5 10-5"/>
-            </svg>
-          </span>
-          <span class="brand-name">ToolWall</span>
-        </a>
 
-        <!-- Nav links -->
-        <div class="nav-links">
-          <a href="{{ '/' | relative_url }}" class="nav-link">首页</a>
-          <a href="{{ '/blog/' | relative_url }}" class="nav-link">博客</a>
-          <a href="{{ '/about/' | relative_url }}" class="nav-link">关于</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+</head>
 
-        <!-- Theme toggle -->
-        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切换明暗主题">
-          <svg id="theme-icon-light" class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/>
-            <line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/>
-            <line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <!-- Brand -->
+      <a href="{{ '/' | relative_url }}" class="nav-brand">
+        <span class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
           </svg>
-          <svg id="theme-icon-dark" class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </span>
+        <span class="brand-name">ToolWall</span>
+      </a>
+
+      <!-- Nav links -->
+      <div class="nav-links">
+        <a href="{{ '/' | relative_url }}" class="nav-link">首页</a>
+        <a href="{{ '/blog/' | relative_url }}" class="nav-link">博客</a>
+        <a href="{{ '/about/' | relative_url }}" class="nav-link">关于</a>
+      </div>
+
+      <!-- Theme toggle -->
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="切换明暗主题">
+        <svg id="theme-icon-light" class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg id="theme-icon-dark" class="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <small>
+      © {{ "now" | date: "%Y" }} {{ site.author }} · Built with Jekyll
+    </small>
+  </footer>
+
+  <!-- ========== Music Player: Mini Mode ========== -->
+  <div id="player-mini" aria-label="音乐播放器 - 迷你模式">
+    <!-- Top progress bar -->
+    <div class="mini-progress-track">
+      <div id="mini-progress-fill" class="mini-progress-fill"></div>
+    </div>
+
+    <!-- Cover -->
+    <img id="mini-cover" class="mini-cover" src="" alt="歌曲封面" />
+
+    <!-- Song info -->
+    <div class="mini-info">
+      <span id="mini-song-name" class="mini-song-name">暂无歌曲</span>
+      <span id="mini-song-artist" class="mini-song-artist">-</span>
+    </div>
+
+    <!-- Controls -->
+    <div class="mini-controls">
+      <!-- Audio visualizer -->
+      <div id="audio-visualizer" class="audio-visualizer" aria-hidden="true">
+        <span class="viz-bar"></span>
+        <span class="viz-bar"></span>
+        <span class="viz-bar"></span>
+      </div>
+
+      <!-- Play/Pause -->
+      <button type="button" id="mini-play-toggle" class="mini-play-btn" aria-label="播放或暂停">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <polygon points="5,3 19,12 5,21" />
+        </svg>
+      </button>
+
+      <!-- Expand button (hamburger) -->
+      <button type="button" id="mini-expand-btn" class="mini-expand-btn" aria-label="展开播放器">
+        <span class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== Music Player: Expanded Mode ========== -->
+  <div id="player-expanded" class="hidden" aria-label="音乐播放器 - 展开模式">
+    <!-- Blurred background -->
+    <div id="expanded-bg" class="expanded-bg"></div>
+    <div class="expanded-overlay"></div>
+
+    <!-- Inner content -->
+    <div class="expanded-inner">
+      <!-- Header -->
+      <div class="expanded-header">
+        <button type="button" id="expanded-fullscreen" class="expanded-header-btn" aria-label="窗口化/全屏切换"
+          style="visibility:hidden;">
+          ⛶
+        </button>
+        <button type="button" id="expanded-collapse" class="expanded-header-btn" aria-label="收起播放器">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6,9 12,15 18,9" />
           </svg>
         </button>
-      </nav>
-    </header>
-
-    <main id="main-content" class="page-main">
-      {{ content }}
-    </main>
-
-    <footer class="site-footer">
-      <small>
-        © {{ "now" | date: "%Y" }} {{ site.author }} · Built with Jekyll
-      </small>
-    </footer>
-
-    <!-- ========== Music Player: Mini Mode ========== -->
-    <div id="player-mini" aria-label="音乐播放器 - 迷你模式">
-      <!-- Top progress bar -->
-      <div class="mini-progress-track">
-        <div id="mini-progress-fill" class="mini-progress-fill"></div>
       </div>
 
       <!-- Cover -->
-      <img id="mini-cover" class="mini-cover" src="" alt="歌曲封面" />
+      <div class="expanded-cover-wrap">
+        <img id="expanded-cover" class="expanded-cover" src="" alt="歌曲封面" />
+      </div>
+
+      <!-- Lyrics -->
+      <div id="expanded-lyrics" class="expanded-lyrics">
+        <p class="lyrics-empty">暂无歌词</p>
+      </div>
 
       <!-- Song info -->
-      <div class="mini-info">
-        <span id="mini-song-name" class="mini-song-name">暂无歌曲</span>
-        <span id="mini-song-artist" class="mini-song-artist">-</span>
+      <div class="expanded-song-info">
+        <div id="expanded-song-name" class="expanded-song-name">暂无歌曲</div>
+        <div id="expanded-song-artist" class="expanded-song-artist">-</div>
+      </div>
+
+      <!-- Progress -->
+      <div class="expanded-progress">
+        <div id="progress-track" class="progress-track">
+          <div id="progress-fill" class="progress-fill" style="width:0%">
+            <div class="progress-thumb"></div>
+          </div>
+        </div>
+        <div class="progress-time">
+          <span id="current-time">00:00</span>
+          <span id="total-time">00:00</span>
+        </div>
       </div>
 
       <!-- Controls -->
-      <div class="mini-controls">
-        <!-- Audio visualizer -->
-        <div id="audio-visualizer" class="audio-visualizer" aria-hidden="true">
-          <span class="viz-bar"></span>
-          <span class="viz-bar"></span>
-          <span class="viz-bar"></span>
-        </div>
-
-        <!-- Play/Pause -->
-        <button type="button" id="mini-play-toggle" class="mini-play-btn" aria-label="播放或暂停">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+      <div class="expanded-controls">
+        <button type="button" id="play-mode-toggle" class="ctrl-btn" aria-label="切换播放模式">🔁</button>
+        <button type="button" id="prev-song" class="ctrl-btn" aria-label="上一首">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+          </svg>
+        </button>
+        <button type="button" id="play-toggle" class="ctrl-btn play-btn" aria-label="播放或暂停">
+          <svg id="play-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
             <polygon points="5,3 19,12 5,21" />
           </svg>
         </button>
+        <button type="button" id="next-song" class="ctrl-btn" aria-label="下一首">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16 18h2V6h-2zM6 18l8.5-6L6 6z" />
+          </svg>
+        </button>
+        <button type="button" id="mute-toggle" class="ctrl-btn" aria-label="静音或取消静音">🔊</button>
+      </div>
 
-        <!-- Expand button (hamburger) -->
-        <button type="button" id="mini-expand-btn" class="mini-expand-btn" aria-label="展开播放器">
-          <span class="hamburger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+      <!-- Volume -->
+      <div class="expanded-volume">
+        <button type="button" id="volume-down" class="volume-btn" aria-label="降低音量">🔉</button>
+        <input id="volume-input" class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.7"
+          aria-label="音量调节" />
+        <button type="button" id="volume-up" class="volume-btn" aria-label="增大音量">🔊</button>
+      </div>
+
+      <!-- Playlist toggle -->
+      <div class="playlist-toggle-wrap">
+        <button type="button" id="playlist-toggle" class="playlist-toggle-btn" aria-label="展开播放列表">
+          播放列表 ▴
         </button>
       </div>
-    </div>
 
-    <!-- ========== Music Player: Expanded Mode ========== -->
-    <div id="player-expanded" class="hidden" aria-label="音乐播放器 - 展开模式">
-      <!-- Blurred background -->
-      <div id="expanded-bg" class="expanded-bg"></div>
-      <div class="expanded-overlay"></div>
-
-      <!-- Inner content -->
-      <div class="expanded-inner">
-        <!-- Header -->
-        <div class="expanded-header">
-          <button type="button" id="expanded-fullscreen" class="expanded-header-btn" aria-label="窗口化/全屏切换" style="visibility:hidden;">
-            ⛶
-          </button>
-          <button type="button" id="expanded-collapse" class="expanded-header-btn" aria-label="收起播放器">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6,9 12,15 18,9" />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Cover -->
-        <div class="expanded-cover-wrap">
-          <img id="expanded-cover" class="expanded-cover" src="" alt="歌曲封面" />
-        </div>
-
-        <!-- Lyrics -->
-        <div id="expanded-lyrics" class="expanded-lyrics">
-          <p class="lyrics-empty">暂无歌词</p>
-        </div>
-
-        <!-- Song info -->
-        <div class="expanded-song-info">
-          <div id="expanded-song-name" class="expanded-song-name">暂无歌曲</div>
-          <div id="expanded-song-artist" class="expanded-song-artist">-</div>
-        </div>
-
-        <!-- Progress -->
-        <div class="expanded-progress">
-          <div id="progress-track" class="progress-track">
-            <div id="progress-fill" class="progress-fill" style="width:0%">
-              <div class="progress-thumb"></div>
-            </div>
-          </div>
-          <div class="progress-time">
-            <span id="current-time">00:00</span>
-            <span id="total-time">00:00</span>
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <div class="expanded-controls">
-          <button type="button" id="play-mode-toggle" class="ctrl-btn" aria-label="切换播放模式">🔁</button>
-          <button type="button" id="prev-song" class="ctrl-btn" aria-label="上一首">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
-          </button>
-          <button type="button" id="play-toggle" class="ctrl-btn play-btn" aria-label="播放或暂停">
-            <svg id="play-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5,3 19,12 5,21" />
-            </svg>
-          </button>
-          <button type="button" id="next-song" class="ctrl-btn" aria-label="下一首">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 18h2V6h-2zM6 18l8.5-6L6 6z"/></svg>
-          </button>
-          <button type="button" id="mute-toggle" class="ctrl-btn" aria-label="静音或取消静音">🔊</button>
-        </div>
-
-        <!-- Volume -->
-        <div class="expanded-volume">
-          <button type="button" id="volume-down" class="volume-btn" aria-label="降低音量">🔉</button>
-          <input id="volume-input" class="volume-slider" type="range" min="0" max="1" step="0.01" value="0.7" aria-label="音量调节" />
-          <button type="button" id="volume-up" class="volume-btn" aria-label="增大音量">🔊</button>
-        </div>
-
-        <!-- Playlist toggle -->
-        <div class="playlist-toggle-wrap">
-          <button type="button" id="playlist-toggle" class="playlist-toggle-btn" aria-label="展开播放列表">
-            播放列表 ▴
-          </button>
-        </div>
-
-        <!-- Playlist -->
-        <div id="expanded-playlist" class="expanded-playlist">
-          <!-- Dynamically rendered -->
-        </div>
+      <!-- Playlist -->
+      <div id="expanded-playlist" class="expanded-playlist">
+        <!-- Dynamically rendered -->
       </div>
     </div>
+  </div>
 
-    <!-- Hidden audio element -->
-    <audio id="audio-el" preload="none"></audio>
+  <!-- Hidden audio element -->
+  <audio id="audio-el" preload="none"></audio>
 
-    <script>
-      window.linksData = {{ site.data.links | jsonify }};
-      window.musicData = {{ site.data.music | jsonify }};
-    </script>
-    <script type="module" src="{{ '/assets/js/main.js' | relative_url }}"></script>
-  </body>
+  <script>
+    window.linksData = {{ site.data.links | jsonify }};
+    window.musicData = {{ site.data.music | jsonify }};
+  </script>
+  <script type="module" src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+
 </html>

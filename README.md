@@ -3,12 +3,6 @@ Welcome! I am [MiniMilkfish](https://github.com/minimilkfish).
 Here is the place into which I publish some of my leisure works such as:
 
 - [Blog](https://minimilkfish.github.io/blog/)
-- [Knowledge Cards](https://minimilkfish.github.io/wiki/)
-- [Notes of Academic Reading](https://minimilkfish.github.io/papers/)
-- [Academic Publications](https://minimilkfish.github.io/pub.html)
-- [Configurations](https://github.com/minimilkfish/minimilkfish.github.io/tree/master/dotfiles)
-- [Translations](https://github.com/xitu/gold-miner/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aminimilkfish)
-- [ChangeLog of Me](https://minimilkfish.github.io/changelog.html)
 
 This page is hosted at Github.  
 To see the source code you can visit the [repo](https://github.com/minimilkfish/minimilkfish.github.io) and I'd be glad if you like and star it.
