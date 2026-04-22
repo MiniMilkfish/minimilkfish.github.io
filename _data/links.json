@@ -1,10 +1,39 @@
 {
-  "categories": ["开发工具", "AI工具", "学习资源"],
+  "categories": ["设计资源", "开发工具", "多媒体", "人工智能", "效率办公"],
   "links": [
+    {
+      "name": "Figma",
+      "url": "https://www.figma.com",
+      "category": "设计资源",
+      "description": "协作式设计工具",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Dribbble",
+      "url": "https://dribbble.com",
+      "category": "设计资源",
+      "description": "设计师作品社区",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Behance",
+      "url": "https://www.behance.net",
+      "category": "设计资源",
+      "description": "创意作品展示平台",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
     {
       "name": "GitHub",
       "url": "https://github.com",
       "category": "开发工具",
+      "description": "代码托管与协作",
+      "icon": "",
       "status": "up",
       "lastChecked": ""
     },
@@ -12,21 +41,99 @@
       "name": "Stack Overflow",
       "url": "https://stackoverflow.com",
       "category": "开发工具",
+      "description": "开发者问答社区",
+      "icon": "",
       "status": "up",
       "lastChecked": ""
     },
     {
-      "name": "ChatGPT",
-      "url": "https://chat.openai.com",
-      "category": "AI工具",
+      "name": "VS Code",
+      "url": "https://code.visualstudio.com",
+      "category": "开发工具",
+      "description": "轻量级代码编辑器",
+      "icon": "",
       "status": "up",
       "lastChecked": ""
     },
     {
       "name": "MDN Web Docs",
       "url": "https://developer.mozilla.org",
-      "category": "学习资源",
-      "status": "down",
+      "category": "开发工具",
+      "description": "Web 技术权威文档",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Midjourney",
+      "url": "https://www.midjourney.com",
+      "category": "人工智能",
+      "description": "AI 图像生成神器",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chat.openai.com",
+      "category": "人工智能",
+      "description": "OpenAI 对话式 AI",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Claude",
+      "url": "https://claude.ai",
+      "category": "人工智能",
+      "description": "Anthropic AI 助手",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Notion",
+      "url": "https://www.notion.so",
+      "category": "效率办公",
+      "description": "全能知识库与笔记",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Trello",
+      "url": "https://trello.com",
+      "category": "效率办公",
+      "description": "看板式项目管理",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com",
+      "category": "多媒体",
+      "description": "全球视频分享平台",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Spotify",
+      "url": "https://www.spotify.com",
+      "category": "多媒体",
+      "description": "在线音乐流媒体",
+      "icon": "",
+      "status": "up",
+      "lastChecked": ""
+    },
+    {
+      "name": "Unsplash",
+      "url": "https://unsplash.com",
+      "category": "多媒体",
+      "description": "免费高清图片库",
+      "icon": "",
+      "status": "up",
       "lastChecked": ""
     }
   ]
