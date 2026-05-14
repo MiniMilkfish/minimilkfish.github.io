@@ -36,6 +36,7 @@
       <div class="nav-links">
         <a href="{{ '/' | relative_url }}" class="nav-link">首页</a>
         <a href="{{ '/blog/' | relative_url }}" class="nav-link">博客</a>
+        <a href="{{ '/food/' | relative_url }}" class="nav-link">吃啥？</a>
         <a href="{{ '/about/' | relative_url }}" class="nav-link">关于</a>
       </div>
 
@@ -213,6 +214,7 @@
   <script>
     window.linksData = {{ site.data.links | jsonify }};
     window.musicData = {{ site.data.music | jsonify }};
+    window.foodData = {{ site.data.food | jsonify }};
   </script>
   <script type="module" src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>

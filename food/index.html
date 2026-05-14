@@ -1,0 +1,43 @@
+---
+layout: default
+title: 吃啥？
+permalink: /food/
+description: 吃啥分类清单与滑动卡片选择器
+---
+
+<section id="food-picker" class="food-page">
+  <div class="page-header">
+    <h1 class="page-title">吃啥？</h1>
+    <p class="page-subtitle">按分类挑选今天吃什么，支持滑动卡片切换灵感。</p>
+  </div>
+
+  <div class="food-shell">
+    <div id="food-category-list" class="food-category-list" aria-label="食物分类"></div>
+
+    <div class="food-board">
+      <section class="food-stack-wrap" aria-labelledby="food-stack-heading">
+        <h2 id="food-stack-heading" class="sr-only">食物卡片堆栈</h2>
+        <div id="food-stack-stage" class="food-stack-stage" aria-live="polite"></div>
+
+        <div class="food-stack-actions">
+          <button type="button" class="food-stack-btn" data-food-action="prev">上一张</button>
+          <span id="food-stack-meta" class="food-stack-meta">左右滑动卡片切换</span>
+          <button type="button" class="food-stack-btn" data-food-action="next">下一张</button>
+          <button type="button" class="food-stack-btn" data-food-action="random">随便吃</button>
+        </div>
+      </section>
+
+      <aside class="food-list-wrap" aria-labelledby="food-list-title">
+        <div class="food-list-header">
+          <div>
+            <div id="food-list-title" class="food-list-title">食物列表</div>
+            <div id="food-list-desc" class="food-list-desc">点击可跳到对应卡片</div>
+          </div>
+          <div id="food-list-count" class="food-list-desc"></div>
+        </div>
+
+        <div id="food-list" class="food-list"></div>
+      </aside>
+    </div>
+  </div>
+</section>
