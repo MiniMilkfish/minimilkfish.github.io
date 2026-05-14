@@ -1,10 +1,11 @@
 {
   "categories": [
     "设计资源",
-    "开发工具",
+    "工具",
     "多媒体",
     "人工智能",
-    "效率办公"
+    "效率办公",
+    "开发者平台"
   ],
   "links": [
     {
@@ -37,7 +38,7 @@
     {
       "name": "GitHub",
       "url": "https://github.com",
-      "category": "开发工具",
+      "category": "工具",
       "description": "代码托管与协作",
       "icon": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
       "status": "up",
@@ -46,7 +47,7 @@
     {
       "name": "Stack Overflow",
       "url": "https://stackoverflow.com",
-      "category": "开发工具",
+      "category": "工具",
       "description": "开发者问答社区",
       "icon": "https://www.google.com/s2/favicons?domain=stackoverflow.com&sz=64",
       "status": "up",
@@ -55,7 +56,7 @@
     {
       "name": "VS Code",
       "url": "https://code.visualstudio.com",
-      "category": "开发工具",
+      "category": "工具",
       "description": "轻量级代码编辑器",
       "icon": "https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=64",
       "status": "up",
@@ -64,18 +65,108 @@
     {
       "name": "MDN Web Docs",
       "url": "https://developer.mozilla.org",
-      "category": "开发工具",
+      "category": "工具",
       "description": "Web 技术权威文档",
       "icon": "https://www.google.com/s2/favicons?domain=developer.mozilla.org&sz=64",
       "status": "up",
       "lastChecked": "2026-04-29T13:28:06.278357+00:00"
     },
     {
-      "name": "Midjourney",
-      "url": "https://www.midjourney.com",
-      "category": "人工智能",
-      "description": "AI 图像生成神器",
-      "icon": "https://www.google.com/s2/favicons?domain=www.midjourney.com&sz=64",
+      "name": "文件病毒扫描",
+      "url": "https://www.virustotal.com/gui/home/upload",
+      "category": "工具",
+      "description": "文件病毒扫描工具",
+      "icon": "https://www.google.com/s2/favicons?domain=www.virustotal.com/gui/home/upload&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "正则编辑器",
+      "url": "https://rubular.com/r/xfQHocREGj",
+      "category": "工具",
+      "description": "正则表达式编辑器",
+      "icon": "https://www.google.com/s2/favicons?domain=rubular.com&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "HTML/URL To Markdown",
+      "url": "https://devtool.tech/html-md",
+      "category": "工具",
+      "description": "将 HTML 代码或网页 URL 转换为干净的 Markdown 格式",
+      "icon": "https://www.google.com/s2/favicons?domain=devtool.tech&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "查获",
+      "url": "https://www.chahuo.com/",
+      "category": "工具",
+      "description": "提供在线工具箱,包括各种在线小工具,查询工具,开发者工具,驾驶小工具等",
+      "icon": "https://www.google.com/s2/favicons?domain=www.chahuo.com&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "CMD5",
+      "url": "https://www.cmd5.com/",
+      "category": "工具",
+      "description": "针对md5、sha1、sha256等全球通用公开的加密算法进行反向查询",
+      "icon": "https://www.google.com/s2/favicons?domain=www.cmd5.com&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "在线繁体字转换器",
+      "url": "http://www.aies.cn/",
+      "category": "工具",
+      "description": "将繁体字转换为简体字",
+      "icon": "https://www.google.com/s2/favicons?domain=www.aies.cn&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "万能视频图片解析下载",
+      "url": "https://snapany.com/zh",
+      "category": "工具",
+      "description": "快速、免费、简单. 从1000+平台保存视频和图片",
+      "icon": "https://www.google.com/s2/favicons?domain=snapany.com&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "二维码生成器",
+      "url": "https://fietkau.software/qr",
+      "category": "工具",
+      "description": "二维码生成器",
+      "icon": "https://www.google.com/s2/favicons?domain=fietkau.software&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "免费维修指南",
+      "url": "https://zh.ifixit.com/image-compressor",
+      "category": "工具",
+      "description": "免费维修指南",
+      "icon": "https://www.google.com/s2/favicons?domain=zh.ifixit.com&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "文件百科",
+      "url": "https://www.wenjian.net/",
+      "category": "工具",
+      "description": "常用软件的DLL文件及Windows系统DLL文件下载",
+      "icon": "https://www.google.com/s2/favicons?domain=www.wenjian.net&sz=64",
+      "status": "down",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "PDF在线转换器",
+      "url": "https://www.pdfconvertonline.com/cn/",
+      "category": "工具",
+      "description": "PDF在线转换器",
+      "icon": "https://www.google.com/s2/favicons?domain=www.pdfconvertonline.com/cn&sz=64",
       "status": "down",
       "lastChecked": "2026-04-29T13:28:06.278357+00:00"
     },
@@ -116,30 +207,66 @@
       "lastChecked": "2026-04-29T13:28:06.278357+00:00"
     },
     {
-      "name": "YouTube",
-      "url": "https://www.youtube.com",
+      "name": "Vision TV+",
+      "url": "https://www.visiontv.club",
       "category": "多媒体",
       "description": "全球视频分享平台",
-      "icon": "https://www.google.com/s2/favicons?domain=www.youtube.com&sz=64",
+      "icon": "https://www.google.com/s2/favicons?domain=www.visiontv.club&sz=64",
       "status": "up",
       "lastChecked": "2026-04-29T13:28:06.278357+00:00"
     },
     {
-      "name": "Spotify",
-      "url": "https://www.spotify.com",
+      "name": "动漫花园",
+      "url": "https://www.dongmanhuayuan.com/",
       "category": "多媒体",
-      "description": "在线音乐流媒体",
-      "icon": "https://www.google.com/s2/favicons?domain=www.spotify.com&sz=64",
+      "description": "提供动漫、漫画、音乐免费下载",
+      "icon": "https://www.google.com/s2/favicons?domain=www.dongmanhuayuan.com/&sz=64",
       "status": "up",
       "lastChecked": "2026-04-29T13:28:06.278357+00:00"
     },
     {
-      "name": "Unsplash",
-      "url": "https://unsplash.com",
+      "name": "美剧看看",
+      "url": "https://www.meijukankan.net/",
       "category": "多媒体",
-      "description": "免费高清图片库",
-      "icon": "https://www.google.com/s2/favicons?domain=unsplash.com&sz=64",
-      "status": "down",
+      "description": "美剧交流学习平台",
+      "icon": "https://www.google.com/s2/favicons?domain=meijukankan.net&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "低端影视",
+      "url": "https://ddys.app/",
+      "category": "多媒体",
+      "description": "低端影视平台",
+      "icon": "https://www.google.com/s2/favicons?domain=ddys.app&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    }, 
+    {
+      "name": "游讯网",
+      "url": "https://www.yxdown.com/",
+      "category": "多媒体",
+      "description": "游戏下载",
+      "icon": "https://www.google.com/s2/favicons?domain=www.yxdown.com&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "NGA",
+      "url": "https://nga.cn/",
+      "category": "多媒体",
+      "description": "游戏精英玩家俱乐部",
+      "icon": "https://www.google.com/s2/favicons?domain=nga.cn&sz=64",
+      "status": "up",
+      "lastChecked": "2026-04-29T13:28:06.278357+00:00"
+    },
+    {
+      "name": "Js13kGames",
+      "url": "https://js13kgames.com/",
+      "category": "开发者平台",
+      "description": "Js13kGames 是一个 13KB 大小的 JavaScript 游戏平台",
+      "icon": "https://www.google.com/s2/favicons?domain=js13kgames.com&sz=64",
+      "status": "up",
       "lastChecked": "2026-04-29T13:28:06.278357+00:00"
     }
   ]
