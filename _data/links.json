@@ -267,7 +267,30 @@
       "description": "Js13kGames 是一个 13KB 大小的 JavaScript 游戏平台",
       "icon": "https://www.google.com/s2/favicons?domain=js13kgames.com&sz=64",
       "status": "up",
+<<<<<<< HEAD
       "lastChecked": "2026-05-27T09:32:47.801166+00:00"
+=======
+      "lastChecked": "2026-05-14T08:29:49.155457+00:00"
+    },
+    {
+      "name": "AI工具集",
+      "url": "https://ai-bot.cn/",
+      "category": "工具",
+      "description": "一站式人工智能工具集合网站，1000+ AI 工具导航大全",
+      "icon": "https://www.google.com/s2/favicons?domain=ai-bot.cn&sz=64",
+      "status": "up",
+      "lastChecked": "2026-05-14T08:29:49.155457+00:00"
+    },
+    {
+      "name": "爱玩音乐网",
+      "url": "https://www.22a5.com/",
+      "category": "多媒体",
+      "description": "爱玩音乐网",
+      "icon": "https://www.google.com/s2/favicons?domain=22a5.com&sz=64",
+      "status": "up",
+      "lastChecked": "2026-05-14T08:29:49.155457+00:00"
+
+>>>>>>> 4783a41 (feat(music): update music library with new tracks and lyrics)
     }
   ]
 }
