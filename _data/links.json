@@ -267,9 +267,6 @@
       "description": "Js13kGames 是一个 13KB 大小的 JavaScript 游戏平台",
       "icon": "https://www.google.com/s2/favicons?domain=js13kgames.com&sz=64",
       "status": "up",
-<<<<<<< HEAD
-      "lastChecked": "2026-05-27T09:32:47.801166+00:00"
-=======
       "lastChecked": "2026-05-14T08:29:49.155457+00:00"
     },
     {
@@ -290,7 +287,6 @@
       "status": "up",
       "lastChecked": "2026-05-14T08:29:49.155457+00:00"
 
->>>>>>> 4783a41 (feat(music): update music library with new tracks and lyrics)
     }
   ]
 }
